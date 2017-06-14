@@ -18,7 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('apps.home.urls', namespace='index')),
+    url(r'^', include('apps.home.urls', namespace='index')),
     url(r'^home/', include('apps.home.urls', namespace='home')),
     url(r'^screen/', include('apps.screen.urls', namespace='screen')),
     url(r'^inventory/', include('apps.inventory.urls', namespace='inventory')),
